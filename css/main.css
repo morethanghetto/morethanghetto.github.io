@@ -3087,40 +3087,25 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea.placeholder {
     color: #4f4f4f !important;
 }
-.contact-primary, .contact-secondary {
+.contact-primary {
     float: left;
     padding: 0 5rem;
 }
 
 .contact-primary {
-    width: 65%;
+    width: 100%;
 }
 
 .contact-primary #contactForm {
     margin-top: -1.5rem;
 }
 
-.contact-secondary {
-    width: 35%;
+.contact-primary ul {
+  list-style-position: inside;
 }
 
-.contact-secondary::before {
-    content: "";
-    display: block;
-    width: 35%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #121212;
-}
-
-.contact-secondary .contact-info {
+ .contact-info {
     position: relative;
-}
-
-.contact-secondary .cinfo {
-    margin-bottom: 4.8rem;
 }
 
 .contact-social {
@@ -3283,7 +3268,7 @@ html.no-csstransitions .home-content__main {
     .contact-content {
         max-width: 700px;
     }
-    .contact-primary, .contact-secondary {
+    .contact-primary,  {
         float: none;
         width: 100%;
     }
@@ -3291,10 +3276,10 @@ html.no-csstransitions .home-content__main {
         margin-top: -1.5rem;
         margin-bottom: 7.2rem;
     }
-    .contact-secondary .hide-on-fullwidth {
+     .hide-on-fullwidth {
         display: none;
     }
-    .contact-secondary::before {
+    ::before {
         display: none;
     }
     .message-warning, .message-success {
@@ -3321,13 +3306,13 @@ html.no-csstransitions .home-content__main {
         padding-bottom: 12rem;
         text-align: center;
     }
-    .contact-primary, .contact-secondary {
+    .contact-primary,  {
         padding: 0 20px;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .contact-primary, .contact-secondary {
+    .contact-primary,  {
         padding: 0 5px;
     }
 }
